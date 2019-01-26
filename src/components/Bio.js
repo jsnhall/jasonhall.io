@@ -31,8 +31,7 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in Scottsdale, Arizona. He takes interest UX and accessibility in front-end web developement.
-              {` `}
+              Personal blog by {author}.<br />
               <a href={`https://twitter.com/${social.twitter}`}>
                 You should follow him on Twitter
               </a>
