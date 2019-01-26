@@ -6,6 +6,7 @@ const typography = new Typography({
   baseLineHeight: 1.666,
   headerFontFamily: ['Rubik', 'sans-serif'],
   headerWeight: '900',
+  headerGray: '0',
   bodyFontFamily: ['-system UI', 'Open Sans', 'sans-serif'],
   googleFonts: [
     {

@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
+import { IoLogoTwitter, IoLogoGithub } from "react-icons/io";
 
 import { rhythm } from '../utils/typography'
 
@@ -14,6 +15,7 @@ function Bio() {
           <div
             style={{
               display: `flex`,
+              alignContent: `center`,
               marginBottom: rhythm(2.5),
             }}
           >
@@ -31,10 +33,8 @@ function Bio() {
               }}
             />
             <p>
-              Personal blog by {author}.<br />
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
+              {author} is a front-end developer in Scottsdale, Arizona.<br />
+              You should follow him on <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>.
             </p>
           </div>
         )
@@ -47,7 +47,7 @@ const bioQuery = graphql`
   query BioQuery {
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
+        fixed(width: 60, height: 60) {
           ...GatsbyImageSharpFixed
         }
       }
