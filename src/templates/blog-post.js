@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
             ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1 / 3),
+            marginTop: rhythm(-1 / 4),
           }}
         >
           {post.frontmatter.date}

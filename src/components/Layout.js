@@ -7,8 +7,7 @@ import { rhythm, scale } from '../utils/typography'
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
+    const { title, children } = this.props
 
     return (
       <StaticQuery
@@ -19,6 +18,10 @@ class Layout extends React.Component {
             <div>
               <Global
                 styles={css`
+                  h1, h2, h3, h4, h5, h6 {
+                    margin-bottom: ${rhythm(1 / 4)};
+                    color: #000000;
+                  }
                   a {
                     color: #3949ab;
                   }
@@ -27,9 +30,6 @@ class Layout extends React.Component {
                   }
                   a:visited {
                     color: #283593;
-                  }
-                  h1, h2, h3, h4, h5, h6 {
-                    margin-bottom: ${rhythm(1 / 4)};
                   }
                 `}
               />
@@ -44,9 +44,8 @@ class Layout extends React.Component {
                 <h3
                   style={{
                     ...scale(1.5),
-                    marginBottom: rhythm(1.5),
+                    marginBottom: rhythm(2),
                     marginTop: 0,
-                    color: `#000000`,
                   }}
                 >
                   <Link
