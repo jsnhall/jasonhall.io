@@ -25,7 +25,7 @@ class Index extends React.Component {
             <div key={node.fields.slug}>
               <h3
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  marginBottom: rhythm(1 / 8),
                 }}
               >
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
