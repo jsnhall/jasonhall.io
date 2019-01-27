@@ -63,7 +63,7 @@ class Layout extends React.Component {
                     marginBottom: rhythm(2),
                   }}
                 >
-                  A web development blog.
+                  Another web development blog.
                 </p>
                 {children}
                 <footer>
