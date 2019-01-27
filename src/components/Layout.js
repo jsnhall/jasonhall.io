@@ -44,7 +44,6 @@ class Layout extends React.Component {
                 <h3
                   style={{
                     ...scale(1.5),
-                    marginBottom: rhythm(2),
                     marginTop: 0,
                   }}
                 >
@@ -59,6 +58,13 @@ class Layout extends React.Component {
                     {title}
                   </Link>
                 </h3>
+                <p
+                  style={{
+                    marginBottom: rhythm(2),
+                  }}
+                >
+                  A web development blog.
+                </p>
                 {children}
                 <footer>
                   <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>

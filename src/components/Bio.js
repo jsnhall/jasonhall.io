@@ -38,8 +38,7 @@ function Bio() {
                 alignSelf: `center`,
               }}
             >
-              Web development blog by {author}.<br />
-              I'm a front-end developer in Scottsdale, Arizona.
+              {author} is front-end developer in Scottsdale, Arizona.
             </p>
           </div>
         )
