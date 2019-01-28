@@ -45,6 +45,8 @@ class Layout extends React.Component {
                   style={{
                     ...scale(1.5),
                     marginTop: 0,
+                    marginBottom: 0,
+                    marginLeft: rhythm(1 / 8),
                   }}
                 >
                   <Link
@@ -63,7 +65,14 @@ class Layout extends React.Component {
                     marginBottom: rhythm(2),
                   }}
                 >
-                  Another web development blog.
+                  <span
+                    style={{
+                      ...scale(-1 / 4),
+                      color: `rgba(0, 0, 0, 0.6)`,
+                    }}
+                  >
+                    Another web development blog.
+                  </span>
                 </p>
                 {children}
                 <footer>
