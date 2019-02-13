@@ -2,7 +2,7 @@ import Typography from 'typography'
 import Rubik from 'typeface-rubik'
 
 const typography = new Typography({
-  baseFontSize: '16px',
+  baseFontSize: '18px',
   baseLineHeight: 1.666,
   headerFontFamily: ['Rubik', 'sans-serif'],
   headerWeight: '900',
