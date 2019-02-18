@@ -22,7 +22,7 @@ Semantic HTML and Accessibility are so important in web development and often ov
 
 ## 2. Testing
 
-Unit testing, browser testing, 
+I'll admit that I'm one of many developers who do not perform tests other than checking the console and clicking around to make sure everything works as intended. Well, things are about to change. This year, I'm dedicating myself to not only learn testing but implement it in my applications. Whether I'm testing browser functionality, performing a unit test or auditing page performance I will be sure to utilize one of the great testing tools out there.
 
 **Resources**
 
@@ -33,6 +33,8 @@ Unit testing, browser testing,
 
 ## 3. Redux
 
+Redux has been one of those things that I've wanted to learn for awhile now. As my applications grow more complex I'm beginning to realize that I may need to know how to implement state management. 
+
 **Resources**
 
 * [Redux documentation](https://redux.js.org/introduction/getting-started)
@@ -41,10 +43,12 @@ Unit testing, browser testing,
 
 ## 4. Flexbox and CSS Grid
 
+Layouts, layouts, layouts. Flexbox and CSS Grid are amazing tools that can assist in building beautiful and responsive layouts. I know the basics of flexbox and always tend to resort to the MDN docs when setting up a CSS grid. It's my goal to go from basics and always referencing documentation to a layout guru. How will I do this? Well, I'll still resort to the docs, but it's all about practice, practice, practice.
+
 **Resources**
 
 ## 5. Lamda Functions
 
-I have recently came across the idea of serverless web development 
+I have recently came across the idea of serverless web development and this thing called AWS Lamda Functions. These functions allow you to write server-side code without running it on a dedicated server. This means that the front-end developer can now perform tasks such as retrieving and posting data without server configuration.
 
 **Resources**
