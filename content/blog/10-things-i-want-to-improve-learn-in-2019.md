@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Top 5 Things I want to be Better at in 2019
+title: Five Things I want to be Better at in 2019
 date: 2019-02-16T20:34:57.989Z
 tags:
   - improvement
@@ -10,7 +10,7 @@ This year has already been filled with exciting new stuff to learn. I have learn
 
 ## 1. Semantic HTML and Accessibility
 
-Accessibility is so important in web development and often overlooked. It is my goal as a web developer to ensure that the pages I develop can be used by anyone. Recently, I have learned [how screen reader users navigate through web pages](https://www.smashingmagazine.com/2019/02/accessibility-webinar/) and it has occurred to me that I need to work on improving the user experience for these individuals who rely on this technology.
+Semantic HTML and Accessibility are so important in web development and often overlooked. It is my goal as a web developer to ensure that the pages I develop can be used by anyone. Recently, I have learned [how screen reader users navigate through web pages](https://www.smashingmagazine.com/2019/02/accessibility-webinar/) and it has occurred to me that I need to work on improving the user experience for these individuals who rely on this technology.
 
 **Resources**
 
@@ -20,12 +20,31 @@ Accessibility is so important in web development and often overlooked. It is my 
 * [Events](https://a11yproject.com/events)
 * [The A11Y Project](https://a11yproject.com/)
 
-## 2. React
+## 2. Testing
+
+Unit testing, browser testing, 
+
+**Resources**
+
+* [BrowserStack](https://www.browserstack.com/)
+* [Jest documentation](https://jestjs.io/docs/en/getting-started)
+* [Jest Crash Course - Traversy Media](https://www.youtube.com/watch?v=7r4xVDI2vho)
+* [Lighthouse web page audits](https://developers.google.com/web/tools/lighthouse/)
 
 ## 3. Redux
 
+**Resources**
+
+* [Redux documentation](https://redux.js.org/introduction/getting-started)
+* [Modern React with Redux - Udemy Course](https://www.udemy.com/react-redux/)
+* [Redux Crash Course with React - Traversy Media](https://www.youtube.com/watch?v=93p3LxR9xfM)
+
 ## 4. Flexbox and CSS Grid
+
+**Resources**
 
 ## 5. Lamda Functions
 
-I have recently came across the idea of serverless web development
+I have recently came across the idea of serverless web development 
+
+**Resources**
