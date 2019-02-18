@@ -27,22 +27,22 @@ const typography = new Typography({
   ],
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     h1: {
-      ...adjustFontSizeTo('32px')
+      ...adjustFontSizeTo('38px')
     },
     h2: {
-      ...adjustFontSizeTo('30px')
+      ...adjustFontSizeTo('34px')
     },
     h3: {
-      ...adjustFontSizeTo('28px')
+      ...adjustFontSizeTo('30px')
     },
     h4: {
       ...adjustFontSizeTo('26px')
     },
     h5: {
-      ...adjustFontSizeTo('24px')
+      ...adjustFontSizeTo('22px')
     },
     h6: {
-      ...adjustFontSizeTo('22px')
+      ...adjustFontSizeTo('18px')
     },
   }),
 })
