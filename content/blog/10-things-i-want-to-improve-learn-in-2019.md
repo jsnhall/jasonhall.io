@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Five Things to Improve in 2019
+title: Five Things to Improve / Learn in 2019
 date: 2019-02-16T20:34:57.989Z
 tags:
   - improvement
