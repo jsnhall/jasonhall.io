@@ -6,7 +6,7 @@ tags:
   - improvement
   - learning
 ---
-This year has already been filled with exciting new stuff to learn. I have learned all about Gatsby, deploying sites with Netlify and have sharpened my skills in React. However, the learning never stops in the industry of web development, so I have laid out the top 5 things I want to improve on or learn for the remaining year of 2019.
+So far this year, I have learned all about [Gatsby](https://www.gatsbyjs.org/), deploying sites with [Netlify](https://app.netlify.com/) and have sharpened my [React](https://reactjs.org/) skills, but the learning doesn't stop there. Here, I have laid out the top 5 things I want to learn or improve on for the remaining year of 2019. Each topic contains a list of resources that will bring value in leveling up in these areas.
 
 ## 1. Semantic HTML and Accessibility
 
@@ -22,7 +22,7 @@ Semantic HTML and Accessibility are so important in web development and often ov
 
 ## 2. Testing
 
-I'll admit that I'm one of many developers who do not perform tests other than checking the console and clicking around to make sure everything works as intended. Well, things are about to change. This year, I'm dedicating myself to not only learn testing but implement it in my applications. Whether I'm testing browser functionality, performing a unit test or auditing page performance I will be sure to utilize one of the great testing tools out there.
+Okay, I'll admit it. I don't test like I should. My tests consist of checking the console, clicking around to make sure everything works as intended and eyeing the page in question in one or two other browsers not named Chrome. Well, things are about to change as testing will be a top priority for me here on out. 
 
 **Resources**
 
@@ -33,22 +33,32 @@ I'll admit that I'm one of many developers who do not perform tests other than c
 
 ## 3. Redux
 
-Redux has been one of those things that I've wanted to learn for awhile now. As my applications grow more complex I'm beginning to realize that I may need to know how to implement state management. 
+[Redux](https://redux.js.org/), a predictable state container for JavaScript apps, has been one of those things that I've wanted to learn for awhile, but I never really had a use for it until now. My applications are becoming more complex and it's apparent to me that utilizing Redux will be essential.
 
 **Resources**
 
 * [Redux documentation](https://redux.js.org/introduction/getting-started)
+* [Redux tutorial](https://redux.js.org/basics/basic-tutorial)
 * [Modern React with Redux - Udemy Course](https://www.udemy.com/react-redux/)
 * [Redux Crash Course with React - Traversy Media](https://www.youtube.com/watch?v=93p3LxR9xfM)
 
 ## 4. Flexbox and CSS Grid
 
-Layouts, layouts, layouts. Flexbox and CSS Grid are amazing tools that can assist in building beautiful and responsive layouts. I know the basics of flexbox and always tend to resort to the MDN docs when setting up a CSS grid. It's my goal to go from basics and always referencing documentation to a layout guru. How will I do this? Well, I'll still resort to the docs, but it's all about practice, practice, practice.
+Flexbox and CSS Grid are amazing tools that can assist in building beautiful and responsive layouts. I know the basics of flexbox and always tend to resort to the MDN docs when setting up a CSS grid. It's my goal to go from basics to a master layout ninja. How will I do this? Well, I'll still resort to the docs, but it's all about practice, practice, practice!
 
 **Resources**
 
-## 5. Lamda Functions
+* [Grid by Example](https://gridbyexample.com/examples/)
+* [MDN documentation - CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+* [MDN documentation - Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+* [Flexbox Zombies - Game](https://flexboxzombies.com/p/flexbox-zombies)
+* [Layout Land](https://www.youtube.com/layoutland)
 
-I have recently came across the idea of serverless web development and this thing called AWS Lamda Functions. These functions allow you to write server-side code without running it on a dedicated server. This means that the front-end developer can now perform tasks such as retrieving and posting data without server configuration.
+## 5. Serverless Computing
+
+I've recently came across the idea of serverless computing and it sounds amazing! Serverless allows you to build and run applications and services without thinking about servers. This gives more control to us front-end developers so we can worry less about managing and operating servers or runtimes and more about the core product.
 
 **Resources**
+
+* [AWS Serverless APIs & Apps - Udemy Course](https://www.udemy.com/aws-serverless-a-complete-introduction/)
+* [Serverless Lamda Functions - Traversy Media](https://www.youtube.com/watch?v=drJwMlD9Mjo)
