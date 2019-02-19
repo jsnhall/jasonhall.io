@@ -5,8 +5,6 @@ date: 2019-02-19T02:27:03.619Z
 tags:
   - learning
 ---
-​
-
 So far this year, I have learned all about [Gatsby](https://www.gatsbyjs.org/), deploying sites with [Netlify](https://app.netlify.com/) and have sharpened my [React](https://reactjs.org/) skills, but the learning doesn't stop there. Here, I have laid out the top 5 things I want to learn or improve on for the remaining year of 2019. Each topic contains a list of resources that will bring value in leveling up in these areas.
 
 ## 1. Semantic HTML and Accessibility
