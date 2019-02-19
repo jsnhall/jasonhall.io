@@ -6,6 +6,8 @@ tags:
   - improvement
   - learning
 ---
+
+
 So far this year, I have learned all about [Gatsby](https://www.gatsbyjs.org/), deploying sites with [Netlify](https://app.netlify.com/) and have sharpened my [React](https://reactjs.org/) skills, but the learning doesn't stop there. Here, I have laid out the top 5 things I want to learn or improve on for the remaining year of 2019. Each topic contains a list of resources that will bring value in leveling up in these areas.
 
 ## 1. Semantic HTML and Accessibility
@@ -33,7 +35,7 @@ Okay, I'll admit it. I don't test like I should. My tests consist of checking th
 
 ## 3. Redux
 
-[Redux](https://redux.js.org/), a predictable state container for JavaScript apps, has been one of those things that I've wanted to learn for awhile, but I never really had a use for it until now. My applications are becoming more complex and it's apparent to me that utilizing Redux will be essential.
+[Redux](https://redux.js.org/), a predictable state container for JavaScript apps, has been one of those things that I've wanted to learn for a while, but I never really had a use for it until now. My applications are becoming more complex and it's apparent to me that utilizing Redux will be essential.
 
 **Resources**
 
@@ -44,7 +46,7 @@ Okay, I'll admit it. I don't test like I should. My tests consist of checking th
 
 ## 4. Flexbox and CSS Grid
 
-Flexbox and CSS Grid are amazing tools that can assist in building beautiful and responsive layouts. I know the basics of flexbox and always tend to resort to the MDN docs when setting up a CSS grid. It's my goal to go from basics to a master layout ninja. How will I do this? Well, I'll still resort to the docs, but it's all about practice, practice, practice!
+Flexbox and CSS Grid are amazing tools that can assist in building beautiful and responsive layouts. I know the basics of flexbox and always tend to resort to the MDN docs when setting up a CSS grid. It's my goal to go from the basics to a master layout ninja. How will I do this? Well, I'll still resort to the docs, but it's all about practice, practice, practice!
 
 **Resources**
 
@@ -56,7 +58,7 @@ Flexbox and CSS Grid are amazing tools that can assist in building beautiful and
 
 ## 5. Serverless Computing
 
-I've recently came across the idea of serverless computing and it sounds amazing! Serverless allows you to build and run applications and services without thinking about servers. This gives more control to us front-end developers so we can worry less about managing and operating servers or runtimes and more about the core product.
+I've recently come across the idea of serverless computing and it sounds amazing! Serverless allows you to build and run applications and services without thinking about servers. This gives more control to us front-end developers so we can worry less about managing and operating servers or runtimes and more about the core product.
 
 **Resources**
 
