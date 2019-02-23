@@ -13,9 +13,9 @@ If you refer to [Kamran Ahmed's Developer Roadmap](https://github.com/kamranahme
 
 Many will say you shouldn't try to learn that fast, you won't be successful if you try and (insert negative comment here), but if you're anything like me, then you don't really have a choice.
 
-I had a steady job that I quit in my late 20's to go to college full time. I realized in college that, to become a molecular biologist, I would have to have a higher degree than a bachelors. No way was I going to spend more godly amounts of money for that. I had bills piling up and rent to help pay for as Megan, my wife, could only take on so much by herself. After discovering my passion for web development, I had no other choice but to learn it quickly so I could become employable and start earning an income again.
+I had a steady job that I quit in my late 20's to go to college full time. I realized in college that, to become a molecular biologist, I would have to have a higher degree than a bachelors (or experience). No way was I going to spend more godly amounts of money for that. I had bills piling up and rent to help pay for as Megan, my wife, could only take on so much by herself. After discovering my passion for web development, I had no other choice but to learn it quickly so I could become employable and start earning an income again.
 
-This is where it all began for me. While I absolutely love what I do, I was experiencing these terrible feelings while trying to cram everything in, and once I finally found a good job in the industry the feelings didn't go away. I still felt inadequate and pressured to keep learning as much as could and as fast as I could, but I learned how to overcome it.
+This is where it all began for me. While I absolutely love what I do, I was experiencing these terrible feelings while trying to cram everything in, and once I finally found a good job in the industry, the feelings didn't go away. I still felt inadequate and pressured to keep learning as much as could and as fast as I could, but I learned how to overcome it.
 
 Recently, I've found peace with where I stand as a web developer, and if you're sitting in the same boat as I was, then I'm here to tell you that you can too. 
 
