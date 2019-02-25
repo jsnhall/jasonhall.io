@@ -18,8 +18,8 @@ I had a steady job that I quit in my late 20's to go to college full time. I rea
 This is where it all began for me. While I absolutely love what I do, I was experiencing these terrible feelings while trying to cram everything in, and once I finally found a good job in the industry, the feelings didn't go away. I still felt inadequate and pressured to keep learning as much as could and as fast as I could, but I learned how to overcome it.
 
 Recently, I've found peace with where I stand as a web developer, and if you're sitting in the same boat as I was, then I'm here to tell you that you can too.
-
-```
+​
+```js
 if (true) {
   return false;
 } else {
