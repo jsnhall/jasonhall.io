@@ -22,9 +22,11 @@ Recently, I've found peace with where I stand as a web developer, and if you're 
 ```
 if (true) {
   return false;
+} else {
+  return true;
 }
 ```
-
+​
 For me, I  for to learn development in your late 20's and early 30's is no easy task, especially when you're counting on your newly accumulated knowledge to land you a job.
 
 If you're anything like me, then these 
