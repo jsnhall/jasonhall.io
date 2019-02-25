@@ -24,6 +24,7 @@ class Layout extends React.Component {
                   }
                   a {
                     color: #3949ab;
+                    text-decoration: none;
                   }
                   a:active {
                     color: #d81b60;
