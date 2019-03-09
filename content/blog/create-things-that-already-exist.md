@@ -17,4 +17,4 @@ It's obvious to me that this mentality doesn't work well if you want to create s
 
 Who cares if your idea's already out there or if somebody can use another platform instead? Keep doing the things you love and building awesome stuff for you and the world to enjoy because, who knows, you could create or discover the next life changing thing.
 
-I'll leave you with this quote by a person who changed the world in his time. "If I have seen further it is by standing on the shoulders of Giants." - Issac Newton
+I'll leave you with this quote by a person who changed the world in his time. "If I have seen further it is by standing on the shoulders of Giants." - Isaac Newton
