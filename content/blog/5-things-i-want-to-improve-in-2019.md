@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 5 things I want to Improve in 2019
+title: 5 Things I want to Improve in 2019
 date: 2019-02-19T02:27:03.619Z
 tags:
   - learning
