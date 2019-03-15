@@ -15,7 +15,7 @@ class Layout extends React.Component {
         render={data => {
           const { social } = data.site.siteMetadata
           return (
-            <div>
+            <>
               <Global
                 styles={css`
                   h1, h2, h3, h4, h5, h6 {
@@ -52,41 +52,45 @@ class Layout extends React.Component {
                   padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
                 }}
               >
-                <h3
-                  style={{
-                    ...scale(1.5),
-                    marginTop: 0,
-                    marginBottom: 0,
-                    marginLeft: rhythm(1 / 8),
-                  }}
-                >
-                  <Link
-                    css={css`
-                      box-shadow: none;
-                      text-decoration: none;
-                      color: #000000 !important;
-                      border: none;
-                    `}
-                    to={`/`}
-                  >
-                    {title}
-                  </Link>
-                </h3>
-                <p
-                  style={{
-                    marginBottom: rhythm(2),
-                  }}
-                >
-                  <span
+                <header>
+                  <h3
                     style={{
-                      ...scale(-1 / 4),
-                      color: `rgba(0, 0, 0, 0.6)`,
+                      ...scale(1.5),
+                      marginTop: 0,
+                      marginBottom: 0,
+                      marginLeft: rhythm(1 / 8),
                     }}
                   >
-                    Another web development blog.
-                  </span>
-                </p>
-                {children}
+                    <Link
+                      css={css`
+                        box-shadow: none;
+                        text-decoration: none;
+                        color: #000000 !important;
+                        border: none;
+                      `}
+                      to={`/`}
+                    >
+                      {title}
+                    </Link>
+                  </h3>
+                  <p
+                    style={{
+                      marginBottom: rhythm(2),
+                    }}
+                  >
+                    <span
+                      style={{
+                        ...scale(-1 / 4),
+                        color: `rgba(0, 0, 0, 0.6)`,
+                      }}
+                    >
+                      Another web development blog.
+                    </span>
+                  </p>
+                </header>
+                <main>
+                  {children}
+                </main>
                 <footer>
                   <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>
                   <span
@@ -95,7 +99,7 @@ class Layout extends React.Component {
                   <a href={`https://github.com/${social.github}`}>GitHub</a>
                 </footer>
               </div>
-            </div>
+            </>
           )
         }}
       />
