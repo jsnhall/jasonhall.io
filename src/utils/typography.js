@@ -10,7 +10,7 @@ const typography = new Typography({
   bodyFontFamily: ['-system UI', 'Open Sans', 'sans-serif'],
   googleFonts: [
     {
-      name: 'Lato',
+      name: 'Rubik',
       styles: [
         '900',
       ],
