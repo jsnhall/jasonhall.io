@@ -44,9 +44,6 @@ class Layout extends React.Component {
                   }
                 `}
               />
-              <noscript>
-                You need to enable JavaScript to run this site.
-              </noscript>
               <div
                 style={{
                   marginLeft: `auto`,
