@@ -24,12 +24,23 @@ class Layout extends React.Component {
                   }
                   a {
                     color: #3949ab;
+                    text-decoration: none;
+                    border-bottom: 1px solid #283593;
+                  }
+                  a:visited {
+                    color: #283593;
+                  }
+                  a:hover {
+                    color: #d81b60;
+                    border-color: #d81b60;
                   }
                   a:active {
                     color: #d81b60;
                   }
-                  a:visited {
-                    color: #283593;
+                  a:focus {
+                    outline: none;
+                    border: 2px dashed #ff0000;
+                    padding: 3px 0;
                   }
                 `}
               />
@@ -50,11 +61,12 @@ class Layout extends React.Component {
                   }}
                 >
                   <Link
-                    style={{
-                      boxShadow: `none`,
-                      textDecoration: `none`,
-                      color: `inherit`,
-                    }}
+                    css={css`
+                      box-shadow: none;
+                      text-decoration: none;
+                      color: #000000 !important;
+                      border: none;
+                    `}
                     to={`/`}
                   >
                     {title}

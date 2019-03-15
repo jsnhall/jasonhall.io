@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { css } from '@emotion/core'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
@@ -23,15 +24,27 @@ class Index extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <h3
+              <h2
                 style={{
+                  fontSize: rhythm(0.9),
                   marginBottom: rhythm(1 / 8),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link
+                  css={css`
+                    box-shadow: none;
+                    border-bottom: 2px solid #283593;
+                    &:focus{
+                      border-bottom: 2px dashed #ff0000;
+                    }
+                    &:hover {
+                      border-color: #d81b60;
+                    }
+                  `}
+                  to={node.fields.slug}>
                   {title}
                 </Link>
-              </h3>
+              </h2>
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
