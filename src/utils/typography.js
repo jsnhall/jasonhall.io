@@ -1,16 +1,17 @@
 import Typography from 'typography'
-import Rubik from 'typeface-rubik'
 
 const typography = new Typography({
-  baseFontSize: '18px',
+  baseFontSize: '22px',
   baseLineHeight: 1.666,
-  headerFontFamily: ['Rubik', 'sans-serif'],
+  headerFontFamily: ['Montserrat', 'sans-serif'],
   headerWeight: '900',
   headerGray: '0',
-  bodyFontFamily: ['-system UI', 'Open Sans', 'sans-serif'],
+  bodyFontFamily: ['Open Sans', 'sans-serif'],
+  bodyColor: 'rgba(0, 0, 0, 0.8)',
+  bodyWeight: '200',
   googleFonts: [
     {
-      name: 'Rubik',
+      name: 'Montserrat',
       styles: [
         '900',
       ],
@@ -18,6 +19,7 @@ const typography = new Typography({
     {
       name: 'Open Sans',
       styles: [
+        '300',
         '400',
         '400i',
         '700',

@@ -15,24 +15,29 @@ export default function Layout({ title, children }) {
             color: #000000;
           }
           a {
-            color: #3949ab;
+            color: #1F0593;
             text-decoration: none;
-            border-bottom: 1px solid #283593;
+            border-bottom: 1px solid #1F0593;
           }
           a:visited {
             color: #283593;
           }
           a:hover {
-            color: #d81b60;
-            border-color: #d81b60;
+            color: #ff0000;
+            border-color: #ff0000;
+            transition: all 0.3s;
           }
           a:active {
-            color: #d81b60;
+            color: #283593;
           }
           a:focus {
             outline: none;
-            border: 2px dashed #ff0000;
-            padding: 3px 0;
+            border: 1px solid #ff0000;
+            padding: 1px 0;
+          }
+          ::selection {
+            background-color: #ff0000;
+            color: #fff;
           }
         `}
       />
@@ -40,7 +45,7 @@ export default function Layout({ title, children }) {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(23),
+          maxWidth: rhythm(20),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
