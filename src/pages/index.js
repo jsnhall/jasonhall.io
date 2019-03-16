@@ -29,7 +29,7 @@ class Index extends React.Component {
                 <h2
                   style={{
                     fontSize: rhythm(0.8),
-                    marginBottom: rhythm(-1/4),
+                    lineHeight: rhythm(1)
                   }}
                 >
                   <Link

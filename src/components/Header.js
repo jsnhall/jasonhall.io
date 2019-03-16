@@ -9,7 +9,6 @@ export default function Header({ title }) {
     <header>
       <h3
         style={{
-          ...scale(1.5),
           marginTop: 0,
           marginBottom: 0,
           marginLeft: rhythm(1 / 8),
