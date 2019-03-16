@@ -88,19 +88,5 @@ module.exports = {
         head: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Montserrat`,
-          },
-          {
-            family: `Open Sans`,
-            variants: [`300`, `400`, `700`]
-          },
-        ],
-      },
-    }
   ],
 }
