@@ -20,12 +20,15 @@ This is where it all began for me. While I absolutely love what I do, I was expe
 Recently, I've found peace with where I stand as a web developer, and if you're sitting in the same boat as I was, then I'm here to tell you that you can too.
 ​
 
-```js
-if (true) {
-  return false;
-} else {
-  let a = 1;
-  return true;
+```jsx
+import React from 'react'
+
+export default function Layout({ title }) {
+  return (
+    <HeaderComponent title={title} />
+    <Body />
+    <Footer />
+  )
 }
 ```
 
