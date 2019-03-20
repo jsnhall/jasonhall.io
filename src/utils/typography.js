@@ -3,19 +3,12 @@ import Typography from 'typography'
 const typography = new Typography({
   baseFontSize: '22px',
   baseLineHeight: 1.666,
-  headerFontFamily: ['Montserrat', 'sans-serif'],
   headerWeight: '900',
   headerGray: '0',
   bodyFontFamily: ['Open Sans', 'sans-serif'],
   bodyColor: 'rgba(0, 0, 0, 0.8)',
   bodyWeight: '200',
   googleFonts: [
-    {
-      name: 'Montserrat',
-      styles: [
-        '900',
-      ],
-    },
     {
       name: 'Open Sans',
       styles: [
