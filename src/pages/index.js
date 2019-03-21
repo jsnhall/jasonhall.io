@@ -27,10 +27,13 @@ class Index extends React.Component {
             <Fade>
               <div key={node.fields.slug}>
                 <h2
-                  style={{
-                    fontSize: rhythm(0.8),
-                    lineHeight: rhythm(1)
-                  }}
+                  css={css`
+                    font-size: ${rhythm(0.7)};
+                    line-height: ${rhythm(1)};
+                    &::first-letter {
+                      font-size: ${rhythm(0.9)};
+                    }
+                  `}
                 >
                   <Link
                     css={css`
