@@ -30,9 +30,6 @@ class Index extends React.Component {
                   css={css`
                     font-size: ${rhythm(0.7)};
                     line-height: ${rhythm(1)};
-                    &::first-letter {
-                      font-size: ${rhythm(0.9)};
-                    }
                   `}
                 >
                   <Link

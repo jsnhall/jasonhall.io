@@ -5,12 +5,12 @@ const typography = new Typography({
   baseLineHeight: 1.666,
   headerWeight: '900',
   headerGray: '0',
-  bodyFontFamily: ['Open Sans', 'sans-serif'],
+  bodyFontFamily: ['Montserrat', 'sans-serif'],
   bodyColor: 'rgba(0, 0, 0, 0.8)',
   bodyWeight: '200',
   googleFonts: [
     {
-      name: 'Open Sans',
+      name: 'Montserrat',
       styles: [
         '300',
         '400',
