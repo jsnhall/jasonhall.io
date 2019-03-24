@@ -24,7 +24,7 @@ class Index extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <Fade>
+            <Fade bottom>
               <div key={node.fields.slug}>
                 <h2
                   css={css`
