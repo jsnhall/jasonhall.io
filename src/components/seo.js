@@ -8,19 +8,23 @@ function SEO({ description, lang, meta, keywords, title }) {
     <StaticQuery
       query={detailsQuery}
       render={data => {
-        const metaDescription =
-          description || data.site.siteMetadata.description
+        const metaDescription = description || data.site.siteMetadata.description
+        const pageTitle = title || data.site.siteMetadata.title
         return (
           <Helmet
             htmlAttributes={{
               lang,
             }}
-            title={title}
+            title={`Jason Hall | ${pageTitle}`}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
             meta={[
               {
                 name: `description`,
                 content: metaDescription,
+              },
+              {
+                name: `keywords`,
+                content: data.site.siteMetadata.keywords
               },
               {
                 property: `og:title`,
@@ -90,6 +94,7 @@ const detailsQuery = graphql`
         title
         description
         author
+        keywords
       }
     }
   }

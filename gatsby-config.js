@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `jasonhall.io`,
+    title: `Front-end Web Developer`,
     author: `Jason Hall`,
-    description: `Another web development blog written by Jason Hall.`,
+    description: `Jason Hall is a professional front-end web developer located in Scottsdale, Arizona. He's a strong advocate of great user experiences, design systems, and accessibility.`,
+    keywords: `Jason Hall, web developer, front-end web developer, ui/ux developer, web development blog, web development portfolio`,
     siteUrl: `https://jasonhall.io/`,
     social: {
       twitter: `@jasonhall_dev`,

@@ -4,7 +4,7 @@ import { css } from '@emotion/core'
 
 import { rhythm, scale } from '../utils/typography'
 
-export default function Header({ title }) {
+export default function Header() {
   return (
     <header>
       <h3
@@ -23,7 +23,7 @@ export default function Header({ title }) {
           `}
           to={`/`}
         >
-          {title}
+          jasonhall.io
         </Link>
       </h3>
       <p

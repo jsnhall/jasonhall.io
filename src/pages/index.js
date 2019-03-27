@@ -17,8 +17,8 @@ class Index extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="Web Development Blog"
-          keywords={[`blog`, `jason hall`, `web development blog`, `html blog`, `css blog`, `javascript blog`]}
+          // title="Web Development Blog"
+          // keywords={[`blog`, `jason hall`, `web development blog`, `html blog`, `css blog`, `javascript blog`]}
         />
         <Bio />
         {posts.map(({ node }) => {
