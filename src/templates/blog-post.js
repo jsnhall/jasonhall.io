@@ -16,16 +16,14 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
         <h1>{post.frontmatter.title}</h1>
-        <p
+        <small
           style={{
-            ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1 / 4),
           }}
         >
           {post.frontmatter.date}
-        </p>
+        </small>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{

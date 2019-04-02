@@ -28,7 +28,7 @@ class Index extends React.Component {
               <div key={node.fields.slug}>
                 <h2
                   css={css`
-                    font-size: ${rhythm(0.7)};
+                    font-size: ${rhythm(0.8)};
                     line-height: ${rhythm(1)};
                   `}
                 >

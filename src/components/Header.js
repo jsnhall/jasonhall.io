@@ -8,11 +8,11 @@ export default function Header() {
   return (
     <header>
       <h3
-        style={{
-          marginTop: 0,
-          marginBottom: 0,
-          marginLeft: rhythm(1 / 8),
-        }}
+        css={css`
+          font-family: 'Kiona Regular', sans-serif;
+          margin-top: 0;
+          margin-bottom: 0;
+        `}
       >
         <Link
           css={css`
@@ -23,7 +23,7 @@ export default function Header() {
           `}
           to={`/`}
         >
-          jasonhall.io
+          Jason Hall
         </Link>
       </h3>
       <p

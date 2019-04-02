@@ -1,6 +1,9 @@
 @font-face {
-  font-family: 'Kiona Regular';
-  src: url('../fonts/Kiona-Regular.ttf');
   font-family: 'Kiona Bold';
   src: url('../fonts/Kiona-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Kiona Regular';
+  src: url('../fonts/Kiona-Regular.ttf');
 }

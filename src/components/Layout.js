@@ -11,10 +11,7 @@ export default function Layout({ children }) {
       <Global
         styles={css`
           h1, h2, h3, h4, h5, h6 {
-            font-family: 'Kiona Bold', sans-serif;
-            text-transform: uppercase;
             margin-bottom: ${rhythm(1 / 4)};
-            color: #000000;
           }
           a {
             color: #1F0593;

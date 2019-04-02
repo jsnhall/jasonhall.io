@@ -3,42 +3,38 @@ import Typography from 'typography'
 const typography = new Typography({
   baseFontSize: '20px',
   baseLineHeight: 1.666,
-  headerWeight: '900',
-  headerGray: '0',
+  headerWeight: '600',
+  headerFontFamily: ['Montserrat', 'sans-serif'],
+  headerColor: 'rgba(0, 0, 0, 0.8)',
   bodyFontFamily: ['Montserrat', 'sans-serif'],
-  bodyColor: 'rgba(0, 0, 0, 0.8)',
+  bodyColor: 'rgba(0, 0, 0, 0.75)',
   bodyWeight: '200',
   googleFonts: [
     {
       name: 'Montserrat',
       styles: [
-        '300',
-        '400',
-        '400i',
-        '700',
-        '700i',
+        '200',
+        '200i',
+        '600',
       ],
     },
   ],
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     h1: {
-      ...adjustFontSizeTo('38px')
-    },
-    h2: {
       ...adjustFontSizeTo('34px')
     },
-    h3: {
+    h2: {
       ...adjustFontSizeTo('30px')
     },
-    h4: {
+    h3: {
       ...adjustFontSizeTo('26px')
     },
-    h5: {
+    h4: {
       ...adjustFontSizeTo('22px')
     },
-    h6: {
+    h5: {
       ...adjustFontSizeTo('18px')
-    },
+    }
   }),
 })
 
