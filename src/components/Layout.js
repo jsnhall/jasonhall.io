@@ -5,7 +5,7 @@ import { rhythm } from '../utils/typography'
 import Header from './Header'
 import Footer from './Footer'
 
-export default function Layout({ title, children }) {
+export default function Layout({ children }) {
   return (
     <>
       <Global
@@ -51,7 +51,7 @@ export default function Layout({ title, children }) {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <Header title={title} />
+        <Header />
         <main>
           {children}
         </main>
