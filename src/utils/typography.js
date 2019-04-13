@@ -9,16 +9,6 @@ const typography = new Typography({
   bodyFontFamily: ['Montserrat', 'sans-serif'],
   bodyColor: 'rgba(0, 0, 0, 0.75)',
   bodyWeight: '300',
-  googleFonts: [
-    {
-      name: 'Montserrat',
-      styles: [
-        '300',
-        '300i',
-        '600',
-      ],
-    },
-  ],
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     h1: {
       ...adjustFontSizeTo('34px')

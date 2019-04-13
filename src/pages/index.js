@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { css } from '@emotion/core'
-import Fade from 'react-reveal/Fade'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
@@ -24,27 +23,25 @@ class Index extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <Fade bottom>
-              <div key={node.fields.slug}>
-                <h2
+            <div key={node.fields.slug}>
+              <h2
+                css={css`
+                  font-size: ${rhythm(0.8)};
+                  line-height: ${rhythm(1)};
+                `}
+              >
+                <Link
                   css={css`
-                    font-size: ${rhythm(0.8)};
-                    line-height: ${rhythm(1)};
+                    box-shadow: none;
+                    border-bottom: none;
                   `}
-                >
-                  <Link
-                    css={css`
-                      box-shadow: none;
-                      border-bottom: none;
-                    `}
-                    to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h2>
-                <small>{node.frontmatter.date}</small>
-                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-              </div>
-            </Fade>
+                  to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h2>
+              <small>{node.frontmatter.date}</small>
+              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            </div>
           )
         })}
       </Layout>

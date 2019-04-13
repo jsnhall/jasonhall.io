@@ -4,3 +4,7 @@ export const media = {
   md: '@media screen and (min-width: 992px)',
   lg: '@media screen and (min-width: 1200px)',
 }
+
+export const transitionTime = {
+  fast: '0.3s'
+}

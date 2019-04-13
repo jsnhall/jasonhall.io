@@ -1,6 +1,7 @@
 import React from 'react'
 import { Global, css } from '@emotion/core'
 
+import { transitionTime } from '../styles/theme'
 import { rhythm } from '../utils/typography'
 import Header from './Header'
 import Footer from './Footer'
@@ -25,7 +26,7 @@ export default function Layout({ children }) {
           a:hover {
             color: #ff0000;
             border-color: #ff0000;
-            transition: all 0.3s;
+            transition: all ${transitionTime.fast};
           }
           a:active {
             color: #283593;
@@ -49,7 +50,7 @@ export default function Layout({ children }) {
         css={css`
           margin: auto;
           max-width: 1200px;
-          padding: 0 15px;
+          padding: 30px 15px;
         `}
       >
         <Header />
