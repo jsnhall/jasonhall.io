@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
-import { IoLogoTwitter, IoLogoGithub } from "react-icons/io";
+import { css } from '@emotion/core'
 
 import { rhythm } from '../utils/typography'
 
@@ -13,32 +13,30 @@ function Bio() {
         const { author } = data.site.siteMetadata
         return (
           <div
-            style={{
-              display: `flex`,
-              alignContent: `center`,
-              marginBottom: rhythm(2),
-            }}
+            css={css`
+              display: flex;
+              align-content: center;
+              align-items: center;
+              margin-bottom: 30px;
+            `}
           >
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 60,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
+            <div>
+              <Image
+                fixed={data.myFace.childImageSharp.fixed}
+                alt={author}
+                css={css`
+                  margin-right: ${rhythm(1 / 2)};
+                  margin-bottom: 0;
+                `}
+              />
+            </div>
             <p
               style={{
                 marginBottom: 0,
                 alignSelf: `center`,
               }}
             >
-              {author} is a front-end developer in Scottsdale, Arizona.
+              <em>{author} is a front-end developer in Scottsdale, Arizona.</em>
             </p>
           </div>
         )
@@ -49,9 +47,9 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    myFace: file(absolutePath: { regex: "/jason-hall-poly.jpg/" }) {
       childImageSharp {
-        fixed(width: 60, height: 60) {
+        fixed(width: 100, height: 100) {
           ...GatsbyImageSharpFixed
         }
       }

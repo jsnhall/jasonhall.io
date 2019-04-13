@@ -1,10 +1,12 @@
 @font-face {
   font-family: 'Kiona Bold';
+  font-display: auto;
   src: url('../fonts/Kiona-Bold.ttf');
 }
 
 @font-face {
   font-family: 'Kiona Regular';
+  font-display: auto;
   src: url('../fonts/Kiona-Regular.ttf');
 }
 
@@ -12,6 +14,7 @@
   font-family: 'Montserrat';
   font-weight: 300;
   font-style: normal;
+  font-display: auto;
   src: url('../fonts/Montserrat-Light.ttf');
 }
 
@@ -19,6 +22,7 @@
   font-family: 'Montserrat';
   font-weight: 300;
   font-style: italic;
+  font-display: auto;
   src: url('../fonts/Montserrat-LightItalic.ttf');
 }
 
@@ -26,6 +30,7 @@
   font-family: 'Montserrat';
   font-weight: 600;
   font-style: normal;
+  font-display: auto;
   src: url('../fonts/Montserrat-SemiBold.ttf');
 }
 
@@ -33,6 +38,7 @@
   font-family: 'Montserrat';
   font-weight: 600;
   font-style: italic;
+  font-display: auto;
   src: url('../fonts/Montserrat-SemiBoldItalic.ttf');
 }
 
@@ -40,6 +46,7 @@
   font-family: 'Montserrat';
   font-weight: 700;
   font-style: normal;
+  font-display: auto;
   src: url('../fonts/Montserrat-Bold.ttf');
 }
 
@@ -47,5 +54,6 @@
   font-family: 'Montserrat';
   font-weight: 700;
   font-style: italic;
+  font-display: auto;
   src: url('../fonts/Montserrat-BoldItalic.ttf');
 }
