@@ -64,13 +64,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Jason Hall`,
+        short_name: `Jason Hall`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#ff0000`,
         display: `minimal-ui`,
-        // icon: `content/assets/gatsby-icon.png`,
+        icon: `src/images/hall-icon.svg`,
       },
     },
     `gatsby-plugin-offline`,
@@ -86,7 +86,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-99111567-3",
-        head: true,
+        head: false,
       },
     },
   ],
