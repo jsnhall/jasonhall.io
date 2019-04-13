@@ -8,13 +8,13 @@ const typography = new Typography({
   headerColor: 'rgba(0, 0, 0, 0.8)',
   bodyFontFamily: ['Montserrat', 'sans-serif'],
   bodyColor: 'rgba(0, 0, 0, 0.75)',
-  bodyWeight: '200',
+  bodyWeight: '300',
   googleFonts: [
     {
       name: 'Montserrat',
       styles: [
-        '200',
-        '200i',
+        '300',
+        '300i',
         '600',
       ],
     },

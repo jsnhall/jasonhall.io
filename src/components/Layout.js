@@ -17,6 +17,7 @@ export default function Layout({ children }) {
             color: #1F0593;
             text-decoration: none;
             border-bottom: 1px solid #1F0593;
+            vertical-align: top;
           }
           a:visited {
             color: #283593;
@@ -31,22 +32,25 @@ export default function Layout({ children }) {
           }
           a:focus {
             outline: none;
-            border: 1px solid #ff0000;
+            outline: 1px solid #ff0000;
             padding: 1px 0;
           }
           ::selection {
             background-color: #ff0000;
             color: #fff;
           }
+          img {
+            margin: 0;
+            padding: 0;
+          }
         `}
       />
       <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(25),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
+        css={css`
+          margin: auto;
+          max-width: 1200px;
+          padding: 0 15px;
+        `}
       >
         <Header />
         <main>

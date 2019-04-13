@@ -3,43 +3,35 @@ import { Link } from 'gatsby'
 import { css } from '@emotion/core'
 
 import { rhythm, scale } from '../utils/typography'
+import logo from '../images/hall-logo.svg' 
 
 export default function Header() {
   return (
-    <header>
-      <h3
+    <header
+      css={css`
+        margin: 30px 0;
+      `}>
+      <Link
         css={css`
-          font-family: 'Kiona Regular', sans-serif;
-          margin-top: 0;
-          margin-bottom: 0;
+          box-shadow: none;
+          text-decoration: none;
+          color: #000000 !important;
+          border: none;
+          &focus {
+            outline: none;
+            border: 1px solid #ff0000;
+          }
         `}
+        to={`/`}
       >
-        <Link
+        <img
+          src={logo}
+          alt="Jason Hall"
           css={css`
-            box-shadow: none;
-            text-decoration: none;
-            color: #000000 !important;
-            border: none;
+            width: 260px;
           `}
-          to={`/`}
-        >
-          Jason Hall
-        </Link>
-      </h3>
-      <p
-        style={{
-          marginBottom: rhythm(2),
-        }}
-      >
-        <span
-          style={{
-            ...scale(-1 / 4),
-            color: `rgba(0, 0, 0, 0.6)`,
-          }}
-        >
-          Another web development blog.
-        </span>
-      </p>
+        />
+      </Link>
     </header>
   )
 }
