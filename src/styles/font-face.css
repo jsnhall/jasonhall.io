@@ -1,13 +1,15 @@
 @font-face {
-  font-family: 'Kiona Bold';
+  font-family: 'Kiona';
+  font-weight: 400;
   font-display: auto;
-  src: url('../fonts/Kiona-Bold.ttf');
+  src: url('../fonts/Kiona-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Kiona Regular';
+  font-family: 'Kiona';
+  font-weight: bold;
   font-display: auto;
-  src: url('../fonts/Kiona-Regular.ttf');
+  src: url('../fonts/Kiona-Bold.ttf');
 }
 
 @font-face {

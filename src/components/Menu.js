@@ -22,8 +22,9 @@ const LI = styled.li`
     position: relative;
     color: #000000;
     cursor: pointer;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     border: none;
+    transition: all ${transitionTime.fast};
     &:after {
       content:""; 
       background: #ff0000; 
@@ -32,6 +33,7 @@ const LI = styled.li`
       right: 0; 
       height: 1px; 
       width: 15px;
+      transition: all ${transitionTime.fast};
     }
     &:hover {
       color: #ff0000;
@@ -39,6 +41,12 @@ const LI = styled.li`
         width: 100%;
         transition: all ${transitionTime.fast};
       }
+    }
+    &:active {
+      color: #ff0000;
+    }
+    &:visited {
+      color: #000;
     }
   }
 `
