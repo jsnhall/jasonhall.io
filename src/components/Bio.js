@@ -15,14 +15,28 @@ function Bio() {
         return (
           <div
             css={css`
-              display: flex;
-              justify-content: space-around;
-              margin-bottom: 100px;
+              position: relative;
+              width: 100%;
+            `}
+          >
+          <div
+            css={css`
+              margin: 50px 0;
+              ${media.sm} {
+                display: flex;
+                justify-content: space-around;
+              }
             `}
           >
             <div
               css={css`
-                width: 300px;
+                width: 200px;
+                ${media.xs} {
+                  width: 250px;
+                }
+                ${media.sm} {
+                  width: 350px;
+                }
               `}
             >
               <Image
@@ -31,10 +45,10 @@ function Bio() {
                 css={css`
                   margin-right: ${rhythm(1 / 2)};
                   margin-bottom: 0;
-                  margin-top: 4em;
-                  max-width: 300px;
+                  margin-top: 7em;
+                  max-width: 375px;
                   ${media.xs} {
-                    margin-top: 4.5em;
+                    margin-top: 10em;
                   }
                   ${media.sm} {
                     margin-top: 5.5em;
@@ -54,15 +68,19 @@ function Bio() {
                   color: #ff0000;
                   font-family: 'Kiona';
                   font-size: 2em;
-                  position: relative;
+                  position: absolute;
+                  top: -2em;
+                  right: 0;
                   z-index: 1;
                   line-height: 1em;
                   margin-left: -1.5em;
-                  padding-left: 0.5em;
+                  padding-left: 2em;
                   ${media.xs} {
                     font-size: 3em;
                   }
                   ${media.sm} {
+                    position: relative;
+                    top: 0;
                     font-size: 3.5em;
                   }
                   ${media.md} {
@@ -91,15 +109,31 @@ function Bio() {
                   Developer
                 </span>
               </h1>
-              {/* <p
-                style={{
-                  marginBottom: 0,
-                  alignSelf: `center`,
-                }}
-              >
-                <em>{author} is a front-end developer in Scottsdale, Arizona.</em>
-              </p> */}
+              <p
+                css={css`
+                  margin-top: 2em;
+                  padding-left: 0;
+                  width: 100%;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  ${media.sm} {
+                    position: relative;
+                    padding-left: 1.5em;
+                    width: 388px;
+                  }
+                  ${media.md} {
+                    padding-left: 2.3em;
+                    width: 555px;
+                  }
+                  ${media.lg} {
+                    padding-left: 3em;
+                    width: 666px;
+                  }
+                `}
+              >Hello, my name is Jason Hall and I'm a passionate front-end developer located in Scottsdale, Arizona. I enjoy creating aesthetically pleasing websites that are highly performant, accessible, and user friendly.</p>
             </div>
+          </div>
           </div>
         )
       }}
@@ -111,7 +145,7 @@ const bioQuery = graphql`
   query BioQuery {
     myFace: file(absolutePath: { regex: "/jason-hall-poly.png/" }) {
       childImageSharp {
-        fluid(maxWidth: 350) {
+        fluid(maxWidth: 375) {
           ...GatsbyImageSharpFluid
         }
       }

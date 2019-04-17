@@ -50,7 +50,7 @@ export default function Layout({ children }) {
         css={css`
           margin: auto;
           max-width: 1200px;
-          padding: 30px 15px;
+          padding: 30px 30px;
         `}
       >
         <Header />
