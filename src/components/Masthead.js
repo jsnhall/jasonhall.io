@@ -99,6 +99,7 @@ export default function Masthead() {
                 grid-row: 4 / 5;
                 align-self: center;
                 ${media.xs} {
+                  align-self: start;
                   grid-column: 3 / 5;
                   grid-row: 4 / 5;
                 }
