@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header
       css={css`
-        margin-bottom: 30px;
+        margin-bottom: 70px;
         display: flex;
         justify-content: space-between;
         ${media.sm} {
