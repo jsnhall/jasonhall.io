@@ -31,6 +31,8 @@ export default function Masthead() {
                 grid-row: 1 / 3;
                 grid-column: 1 / 3;
                 align-self: start;
+                margin-left: -0.5em;
+                margin-right: 0.5em;
                 ${media.xs} {
                   align-self: center;
                   grid-row: 1 / 5;
@@ -52,7 +54,7 @@ export default function Masthead() {
                 grid-column: 3;
                 grid-row: 1 / 5;
                 align-self: start;
-                writing-mode: vertical-lr;
+                writing-mode: vertical-rl;
                 justify-self: end;
                 ${media.xs} {
                   grid-column: 3 / 5;
@@ -101,7 +103,7 @@ export default function Masthead() {
                   grid-row: 4 / 5;
                 }
               `}
-            >Hello, my name is Jason Hall and I'm a passionate front-end developer located in Scottsdale, Arizona. I enjoy creating aesthetically pleasing websites that are highly performant, accessible and user friendly.</p>
+            >Hello! My name is Jason Hall and I'm a passionate front-end developer located in Scottsdale, Arizona. I enjoy creating aesthetically pleasing websites that are highly performant, accessible and user friendly.</p>
           </div>
         )
       }}
