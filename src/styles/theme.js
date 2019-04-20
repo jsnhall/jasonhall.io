@@ -22,6 +22,7 @@ export const shadow = {
 export const radius = {
   sm: '5px',
   md: '10px',
+  lg: '200px',
 }
 
 export const color = {
