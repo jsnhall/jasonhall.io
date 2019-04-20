@@ -27,16 +27,16 @@ export default function Footer() {
         return (
           <footer>
             <SocialLink href={`https://github.com/${social.github}`}>
-              <IoLogoOctocat />
+              <IoLogoOctocat aria-label="GitHub" />
             </SocialLink>
             <SocialLink href={`https://twitter.com/${social.twitter}`}>
-              <IoLogoTwitter />
+              <IoLogoTwitter aria-label="Twitter" />
             </SocialLink>
             <SocialLink href={`https://instagram.com/${social.instagram}`}>
-              <IoLogoInstagram />
+              <IoLogoInstagram aria-label="Instagram" />
             </SocialLink>
             <SocialLink href={`https://linkedin.com/in/${social.linkedin}`}>
-              <IoLogoLinkedin />
+              <IoLogoLinkedin aria-label="LinkedIn" />
             </SocialLink>
           </footer>
         )
