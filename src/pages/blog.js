@@ -5,70 +5,64 @@ import { css } from '@emotion/core'
 import Layout from '../components/Layout'
 import { rhythm } from '../utils/typography'
 
-export default function Blog() {
+export default function Blog({ data }) {
+  let posts = data.allMarkdownRemark.edges
+  
   return (
-    <StaticQuery
-      query={postQuery}
-      render={data => {
-        let posts = data.allMarkdownRemark.edges;
-        return (
-          <Layout>
+    <Layout>
+      <div
+        css={css`
+          max-width: ${rhythm(20)};
+          margin: auto;
+        `}
+      >
+        <h1
+          css={css`
+            margin-bottom: 50px;
+          `}
+        >
+          Blog
+        </h1>
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
             <div
-              css={css`
-                max-width: ${rhythm(20)};
-                margin: auto;
-              `}
+              key={node.fields.slug}
             >
-              <h1
+              <div>
+                <h2
+                  css={css`
+                    font-size: ${rhythm(0.7)};
+                    line-height: ${rhythm(1)};
+                  `}
+                >
+                  <Link
+                    css={css`
+                      box-shadow: none;
+                      border-bottom: none;
+                    `}
+                    to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h2>
+                <small>{node.frontmatter.date}</small>
+              </div>
+              <p
                 css={css`
-                  margin-bottom: 50px;
+                  margin: 1em 0 0 0;
                 `}
-              >
-                Blog
-              </h1>
-              {posts.map(({ node }) => {
-                const title = node.frontmatter.title || node.fields.slug
-                return (
-                  <div
-                    key={node.fields.slug}
-                  >
-                    <div>
-                      <h2
-                        css={css`
-                          font-size: ${rhythm(0.7)};
-                          line-height: ${rhythm(1)};
-                        `}
-                      >
-                        <Link
-                          css={css`
-                            box-shadow: none;
-                            border-bottom: none;
-                          `}
-                          to={node.fields.slug}>
-                          {title}
-                        </Link>
-                      </h2>
-                      <small>{node.frontmatter.date}</small>
-                    </div>
-                    <p
-                      css={css`
-                        margin: 1em 0 0 0;
-                      `}
-                      dangerouslySetInnerHTML={{ __html: node.excerpt }}
-                    />
-                    <hr
-                      css={css`
-                        margin: ${rhythm(1.5)} 0;
-                      `}
-                    />
-                  </div>
-                )
-              })}
+                dangerouslySetInnerHTML={{ __html: node.excerpt }}
+              />
+              <hr
+                css={css`
+                  margin: ${rhythm(1.5)} 0;
+                `}
+              />
             </div>
-          </Layout>
-        )
-      }}
-    />
+          )}
+        )}
+      </div>
+    </Layout>
   )
 }
 
