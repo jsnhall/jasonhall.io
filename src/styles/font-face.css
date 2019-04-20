@@ -2,14 +2,14 @@
   font-family: 'Kiona';
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/Kiona-Regular.ttf');
+  src: url('../../static/fonts/Kiona-Regular.ttf')
 }
 
 @font-face {
   font-family: 'Kiona';
   font-weight: bold;
   font-display: swap;
-  src: url('../fonts/Kiona-Bold.ttf');
+  src: url('../../static/fonts/Kiona-Bold.ttf');
 }
 
 @font-face {
@@ -17,7 +17,7 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: url('../fonts/Montserrat-Light.ttf');
+  src: url('../../static/fonts/Montserrat-Light.ttf');
 }
 
 @font-face {
@@ -25,7 +25,7 @@
   font-weight: 300;
   font-style: italic;
   font-display: swap;
-  src: url('../fonts/Montserrat-LightItalic.ttf');
+  src: url('../../static/fonts/Montserrat-LightItalic.ttf');
 }
 
 @font-face {
@@ -33,7 +33,7 @@
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url('../fonts/Montserrat-SemiBold.ttf');
+  src: url('../../static/fonts/Montserrat-SemiBold.ttf');
 }
 
 @font-face {
@@ -41,7 +41,7 @@
   font-weight: 600;
   font-style: italic;
   font-display: swap;
-  src: url('../fonts/Montserrat-SemiBoldItalic.ttf');
+  src: url('../../static/fonts/Montserrat-SemiBoldItalic.ttf');
 }
 
 @font-face {
@@ -49,7 +49,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url('../fonts/Montserrat-Bold.ttf');
+  src: url('../../static/fonts/Montserrat-Bold.ttf');
 }
 
 @font-face {
@@ -57,5 +57,5 @@
   font-weight: 700;
   font-style: italic;
   font-display: swap;
-  src: url('../fonts/Montserrat-BoldItalic.ttf');
+  src: url('../../static/fonts/Montserrat-BoldItalic.ttf');
 }
