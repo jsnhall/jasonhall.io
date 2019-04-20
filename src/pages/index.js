@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { css } from '@emotion/core'
 
-import Bio from '../components/Bio'
+import Masthead from '../components/Masthead'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
@@ -19,7 +19,7 @@ class Index extends React.Component {
           // title="Web Development Blog"
           // keywords={[`blog`, `jason hall`, `web development blog`, `html blog`, `css blog`, `javascript blog`]}
         />
-        <Bio />
+        <Masthead />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
