@@ -23,7 +23,7 @@ class Index extends React.Component {
           // keywords={[`blog`, `jason hall`, `web development blog`, `html blog`, `css blog`, `javascript blog`]}
         />
         <Masthead />
-        <SectionTitle>Recent Posts</SectionTitle>
+        <SectionTitle id="recent-posts">Recent Posts</SectionTitle>
         <div
           css={css`
             display: grid;

@@ -3,14 +3,19 @@ import { StaticQuery, graphql } from 'gatsby'
 import { IoLogoTwitter, IoLogoOctocat, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
 import styled from '@emotion/styled'
 
-import { color } from '../styles/theme'
+import { color, transitionTime } from '../styles/theme'
 
 const SocialLink = styled.a`
   font-size: 1.2em;
   margin-right: 1em;
   padding: 0;
   border: 0;
-  color: ${color.blue3};
+  color: ${color.red} !important;
+  transition: all ${transitionTime.fast};
+  &:hover {
+    color: ${color.blue1} !important;
+    transition: ${transitionTime.fast};
+  }
 `
 
 export default function Footer() {
