@@ -5,6 +5,7 @@ import { transitionTime } from '../styles/theme'
 import { rhythm } from '../utils/typography'
 import Header from './Header'
 import Footer from './Footer'
+import Background from './Background'
 
 export default function Layout({ children }) {
   return (
@@ -51,6 +52,7 @@ export default function Layout({ children }) {
           margin: auto;
           max-width: 1200px;
           padding: 30px 30px;
+          position: relative;
         `}
       >
         <Header />
@@ -58,6 +60,7 @@ export default function Layout({ children }) {
           {children}
         </main>
         <Footer />
+        <Background />
       </div>
     </>
   )
