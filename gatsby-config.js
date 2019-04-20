@@ -6,7 +6,7 @@ module.exports = {
     keywords: `Jason Hall, web developer, front-end web developer, ui/ux developer, web development blog, web development portfolio`,
     siteUrl: `https://jasonhall.io/`,
     social: {
-      twitter: `@jasonhall_dev`,
+      twitter: `jsonhall`,
       github: `jsnhall`,
     },
   },
