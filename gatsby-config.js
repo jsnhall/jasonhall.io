@@ -8,6 +8,8 @@ module.exports = {
     social: {
       twitter: `jsonhall`,
       github: `jsnhall`,
+      instagram: `jsnhall`,
+      linkedin: `jsnhall`,
     },
   },
   plugins: [

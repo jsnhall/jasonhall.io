@@ -1,7 +1,17 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import { IoLogoTwitter, IoLogoOctocat, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
+import styled from '@emotion/styled'
 
-import { rhythm } from '../utils/typography'
+import { color } from '../styles/theme'
+
+const SocialLink = styled.a`
+  font-size: 1.2em;
+  margin-right: 1em;
+  padding: 0;
+  border: 0;
+  color: ${color.blue3};
+`
 
 export default function Footer() {
   return (
@@ -11,11 +21,18 @@ export default function Footer() {
         const { social } = data.site.siteMetadata
         return (
           <footer>
-            <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>
-            <span
-              style={{ margin: `0 ${rhythm(1 / 3)}` }}
-            >&bull;</span>
-            <a href={`https://github.com/${social.github}`}>GitHub</a>
+            <SocialLink href={`https://github.com/${social.github}`}>
+              <IoLogoOctocat />
+            </SocialLink>
+            <SocialLink href={`https://twitter.com/${social.twitter}`}>
+              <IoLogoTwitter />
+            </SocialLink>
+            <SocialLink href={`https://instagram.com/${social.instagram}`}>
+              <IoLogoInstagram />
+            </SocialLink>
+            <SocialLink href={`https://linkedin.com/in/${social.linkedin}`}>
+              <IoLogoLinkedin />
+            </SocialLink>
           </footer>
         )
       }}
@@ -30,6 +47,8 @@ const footerQuery = graphql`
         social {
           twitter
           github
+          instagram
+          linkedin
         }
       }
     }

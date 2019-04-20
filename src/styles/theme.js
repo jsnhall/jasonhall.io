@@ -6,12 +6,12 @@ export const media = {
 }
 
 export const transitionTime = {
-  fast: '0.3s'
+  fast: '0.3s',
 }
 
 export const typeface = {
   kiona: `'Kiona', arial`,
-  montserrat: `'Montserrat', sans-serif`
+  montserrat: `'Montserrat', sans-serif`,
 }
 
 export const shadow = {
@@ -21,5 +21,12 @@ export const shadow = {
 
 export const radius = {
   sm: '5px',
-  md: '10px'
+  md: '10px',
+}
+
+export const color = {
+  blue1: '#1F0593',
+  blue2: '#283593',
+  blue3: '#1F059370',
+  red: '#ff0000',
 }
