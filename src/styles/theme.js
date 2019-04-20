@@ -8,3 +8,8 @@ export const media = {
 export const transitionTime = {
   fast: '0.3s'
 }
+
+export const typeface = {
+  kiona: `'Kiona', arial`,
+  montserrat: `'Montserrat', sans-serif`
+}

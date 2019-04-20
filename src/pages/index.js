@@ -5,6 +5,7 @@ import { css } from '@emotion/core'
 import Masthead from '../components/Masthead'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
+import SectionTitle from '../components/SectionTitle'
 import { rhythm } from '../utils/typography'
 
 class Index extends React.Component {
@@ -20,11 +21,12 @@ class Index extends React.Component {
           // keywords={[`blog`, `jason hall`, `web development blog`, `html blog`, `css blog`, `javascript blog`]}
         />
         <Masthead />
+        <SectionTitle>Recent Posts</SectionTitle>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <h2
+              <h3
                 css={css`
                   font-size: ${rhythm(0.8)};
                   line-height: ${rhythm(1)};
@@ -38,7 +40,7 @@ class Index extends React.Component {
                   to={node.fields.slug}>
                   {title}
                 </Link>
-              </h2>
+              </h3>
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>

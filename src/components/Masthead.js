@@ -3,8 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import { css } from '@emotion/core'
 
-import { rhythm } from '../utils/typography'
-import { media } from '../styles/theme'
+import { media, typeface } from '../styles/theme'
 
 export default function Masthead() {
   return (
@@ -48,7 +47,8 @@ export default function Masthead() {
             <h1
               css={css`
                 color: #ff0000;
-                font-family: 'Kiona';
+                font-family: ${typeface.kiona};
+                text-transform: uppercase;
                 font-size: 2em;
                 line-height: 1em;
                 grid-column: 3;
