@@ -6,7 +6,9 @@ import Masthead from '../components/Masthead'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import SectionTitle from '../components/SectionTitle'
+import Section from '../components/Section'
 import { rhythm } from '../utils/typography'
+import { media } from '../styles/theme'
 
 class Index extends React.Component {
   render() {
@@ -22,30 +24,53 @@ class Index extends React.Component {
         />
         <Masthead />
         <SectionTitle>Recent Posts</SectionTitle>
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                css={css`
-                  font-size: ${rhythm(0.8)};
-                  line-height: ${rhythm(1)};
-                `}
-              >
-                <Link
-                  css={css`
-                    box-shadow: none;
-                    border-bottom: none;
-                  `}
-                  to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })}
+        <div
+          css={css`
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 1.5em;
+            margin-bottom: 50px;
+            ${media.md} {
+              grid-template-columns: 1fr 1fr 1fr;
+            }
+          `}
+        >
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <Section>
+                <div
+                  key={node.fields.slug}
+                >
+                  <div>
+                    <h3
+                      css={css`
+                        font-size: ${rhythm(0.7)};
+                        line-height: ${rhythm(1)};
+                      `}
+                    >
+                      <Link
+                        css={css`
+                          box-shadow: none;
+                          border-bottom: none;
+                        `}
+                        to={node.fields.slug}>
+                        {title}
+                      </Link>
+                    </h3>
+                    <small>{node.frontmatter.date}</small>
+                  </div>
+                  <p
+                    css={css`
+                      margin: 1em 0 0 0;
+                    `}
+                    dangerouslySetInnerHTML={{ __html: node.excerpt }}
+                  />
+                </div>
+              </Section>
+            )
+          })}
+        </div>
       </Layout>
     )
   }

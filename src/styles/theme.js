@@ -13,3 +13,13 @@ export const typeface = {
   kiona: `'Kiona', arial`,
   montserrat: `'Montserrat', sans-serif`
 }
+
+export const shadow = {
+  sm: '0 4px 4px rgba(0,0,0,0.25)',
+  md: '0 4px 15px rgba(0,0,0,0.25)',
+}
+
+export const radius = {
+  sm: '5px',
+  md: '10px'
+}
