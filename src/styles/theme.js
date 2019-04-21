@@ -10,7 +10,7 @@ export const transitionTime = {
 }
 
 export const typeface = {
-  kiona: `'Kiona', arial`,
+  kiona: `'Kiona', -apple-system, arial, sans-serif`,
   montserrat: `'Montserrat', sans-serif`,
 }
 
