@@ -17,6 +17,9 @@ const SocialLink = styled.a`
     color: ${color.blue1} !important;
     transition: ${transitionTime.fast};
   }
+  &:last-of-type {
+    margin-right: 0;
+  }
 `
 
 export default function Footer() {
