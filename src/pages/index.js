@@ -33,7 +33,7 @@ class Index extends React.Component {
         <div
           css={css`
             display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
             grid-gap: 1.5em;
             margin-bottom: 50px;
             ${media.md} {
