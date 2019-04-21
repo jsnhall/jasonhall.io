@@ -63,7 +63,7 @@ export default function Menu() {
         <LI><Link to={'/'}>Home</Link></LI>
         <LI><Link to={'/work'}>Work</Link></LI>
         <LI><Link to={'/blog'}>Blog</Link></LI>
-        <LI><Link to={'/contact'}>Contact</Link></LI>
+        {/* <LI><Link to={'/contact'}>Contact</Link></LI> */}
       </ul>
     </nav>
   )
