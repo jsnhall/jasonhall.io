@@ -35,6 +35,9 @@ const LI = styled.li`
       width: 15px;
       transition: all ${transitionTime.fast};
     }
+    &:visited {
+      color: #000;
+    }
     &:hover {
       color: #ff0000;
       &:after { 
@@ -44,9 +47,6 @@ const LI = styled.li`
     }
     &:active {
       color: #ff0000;
-    }
-    &:visited {
-      color: #000;
     }
   }
 `

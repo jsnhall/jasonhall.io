@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { IoLogoTwitter, IoLogoOctocat, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
+import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 
 import { color, transitionTime } from '../styles/theme'
@@ -25,7 +26,12 @@ export default function Footer() {
       render={data => {
         const { social } = data.site.siteMetadata
         return (
-          <footer>
+          <footer
+            css={css`
+              display: flex;
+              justify-content: center;
+            `}
+          >
             <SocialLink href={`https://github.com/${social.github}`}>
               <IoLogoOctocat aria-label="GitHub" />
             </SocialLink>
