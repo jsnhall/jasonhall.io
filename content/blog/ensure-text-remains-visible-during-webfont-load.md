@@ -6,7 +6,7 @@ tags:
   - css
   - webfonts
 ---
-If you ever recieve the message "Ensure text remains visible during webfont load" after perfoming a Lighthouse audit, then it means that text is not user-visible while webfonts are loading.
+If you ever recieve the message "Ensure text remains visible during webfont load" after perfoming a Lighthouse audit then it means that text is not user-visible while webfonts are loading.
 
 You'll notice that, while your webpage is loading, there is a brief moment where no text is displayed. To fix this, simply add `font-display: swap;` to your `@font-face` at-rule.
 
