@@ -18,4 +18,4 @@ You'll notice that, while your webpage is loading, there is a brief moment where
 }
 ```
 
-The `swap` value [gives the font face an extremely small block period and an infinite swap period](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display#Values) which should prevent the the flash of no text on you page when it loads. This will also remove the warning message from your Lighthouse audit.
+The `swap` value [gives the font face an extremely small block period and an infinite swap period](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display#Values) which should prevent the the flash of no text on your page when it loads. This will also remove the warning message from your Lighthouse audit.
