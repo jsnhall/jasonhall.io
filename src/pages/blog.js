@@ -1,8 +1,9 @@
 import React from 'react'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { css } from '@emotion/core'
 
 import Layout from '../components/Layout'
+import SectionTitle from '../components/SectionTitle'
 import { rhythm } from '../utils/typography'
 
 export default function Blog({ data }) {
@@ -16,13 +17,7 @@ export default function Blog({ data }) {
           margin: auto;
         `}
       >
-        <h1
-          css={css`
-            margin-bottom: 50px;
-          `}
-        >
-          Blog
-        </h1>
+        <SectionTitle>All Posts</SectionTitle>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
