@@ -17,7 +17,7 @@ export default function Work() {
         `}
       >
         <SectionTitle>My Work</SectionTitle>
-        <p css={css`margin-bottom: 50px;`}>Well, this awkward. If you've landed on this page, then it most likely means you know I'm looking for work and you want to check out some of my recent projects. Honestly, I just need more time to put my rad skills on display. Until then, here's a sweet gif from the 90's to let you know the true status of this page.</p>
+        <p css={css`margin-bottom: 50px;`}>Well, this is awkward. If you've landed on this page, then it most likely means you know I'm looking for work and you want to check out some of my recent projects. Honestly, I just need more time to put my rad skills on display. Until then, here's a sweet gif from the 90's to let you know the true status of this page.</p>
         <img
           css={css`
             margin: auto;
