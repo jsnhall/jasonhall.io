@@ -41,6 +41,9 @@ export default function Layout({ children }) {
             margin: 0;
             padding: 0;
           }
+          .gatsby-highlight {
+            margin-bottom: 1.666rem;
+          }
         `}
       />
       <div
