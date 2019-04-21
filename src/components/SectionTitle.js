@@ -3,9 +3,11 @@ import { css } from '@emotion/core'
 
 import { typeface } from '../styles/theme'
 
-export default function SectionTitle({ children }) {
+export default function SectionTitle({ children, level }) {
+  let ElementType = level || 'h1'
+
   return (
-    <h2
+    <ElementType
       css={css`
         font-family: ${typeface.kiona};
         padding-bottom: 25px;
@@ -27,6 +29,6 @@ export default function SectionTitle({ children }) {
       `}
     >
       {children}
-    </h2>
+    </ElementType>
   )
 }
