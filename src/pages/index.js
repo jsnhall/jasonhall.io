@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import SectionTitle from '../components/SectionTitle'
 import Section from '../components/Section'
+import Button from '../components/Button'
 import { rhythm } from '../utils/typography'
 import { media } from '../styles/theme'
 
@@ -47,9 +48,17 @@ class Index extends React.Component {
               <Section>
                 <div
                   key={node.fields.slug}
+                  css={css`
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    height: 100%;
+                    justify-content: space-between;
+                  `}
                 >
                   <div>
                     <h3
+                      id={title}
                       css={css`
                         font-size: ${rhythm(0.7)};
                         line-height: ${rhythm(1)};
@@ -65,13 +74,14 @@ class Index extends React.Component {
                       </Link>
                     </h3>
                     <small>{node.frontmatter.date}</small>
+                    <p
+                      css={css`
+                        margin: 1em 0 2em 0;
+                      `}
+                      dangerouslySetInnerHTML={{ __html: node.excerpt }}
+                    />
                   </div>
-                  <p
-                    css={css`
-                      margin: 1em 0 0 0;
-                    `}
-                    dangerouslySetInnerHTML={{ __html: node.excerpt }}
-                  />
+                  <Button link={node.fields.slug}>Read More</Button>
                 </div>
               </Section>
             )

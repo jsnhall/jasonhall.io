@@ -1,29 +1,31 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { css } from '@emotion/core'
+require('focus-visible')
 
-import { radius, shadow } from '../styles/theme'
+import { radius, shadow, color } from '../styles/theme'
 
-export default function Button({ children, link, color }) {
+export default function Button({ children, link }) {
   return (
     <Link
       to={link}
       css={css`
-        background: red !important;
+        background: #fff;
         font-size: 12px;
         font-weight: bold;
         text-transform: uppercase;
         border: none;
         padding: 1.2em 2.5em !important;
-        color: #fff;
+        color: ${color.red};
         border-radius: ${radius.lg};
-        box-shadow: ${shadow.sm};
+        box-shadow: ${shadow.md};
         display: inline-block;
-        $:hover {
-          color: #000 !important;
-        }
         &:visited {
-          color: #fff;
+          color: ${color.red};
+        }
+        &:hover {
+          background: ${color.red};
+          color: #fff !important;
         }
       `}
     >

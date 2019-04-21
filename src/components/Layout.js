@@ -20,6 +20,7 @@ export default function Layout({ children }) {
             text-decoration: none;
             border-bottom: 1px solid #1F0593;
             vertical-align: top;
+            transition: all ${transitionTime.fast};
           }
           a:visited {
             color: #283593;
@@ -31,11 +32,6 @@ export default function Layout({ children }) {
           }
           a:active {
             color: #283593;
-          }
-          a:focus:not(:focus-visible) {
-            outline: none;
-            outline: 1px solid #ff0000;
-            padding: 1px 0;
           }
           ::selection {
             background-color: #ff0000;
