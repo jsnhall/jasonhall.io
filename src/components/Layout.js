@@ -6,7 +6,7 @@ import { transitionTime } from '../styles/theme'
 import { rhythm } from '../utils/typography'
 import Header from './Header'
 import Footer from './Footer'
-// import Background from './Background'
+import Background from './Background'
 
 export default function Layout({ children }) {
   return (
@@ -114,7 +114,7 @@ export default function Layout({ children }) {
           {children}
         </main>
         <Footer />
-        {/* <Background /> */}
+        <Background />
       </div>
     </>
   )

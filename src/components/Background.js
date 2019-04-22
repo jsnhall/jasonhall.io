@@ -28,7 +28,9 @@ export default function Background() {
           >
             <div
               css={css`
+                will-change: transform, opacity;
                 transform: rotate(50deg);
+                animation-name: spin;
                 animation: spin 80s linear infinite;
                 @keyframes spin { 100% { transform:rotate(360deg); } }
                 grid-column: 1 / 3;
@@ -58,6 +60,7 @@ export default function Background() {
             </div>
             <div
               css={css`
+                will-change: transform, opacity;
                 width: 600px;
                 transform: rotate(14deg);
                 animation: spin 60s linear infinite;
