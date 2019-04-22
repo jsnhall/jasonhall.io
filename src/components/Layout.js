@@ -1,6 +1,7 @@
 import React from 'react'
 import { Global, css } from '@emotion/core'
 
+import fonts from '../styles/fonts'
 import { transitionTime } from '../styles/theme'
 import { rhythm } from '../utils/typography'
 import Header from './Header'
@@ -12,6 +13,60 @@ export default function Layout({ children }) {
     <>
       <Global
         styles={css`
+          @font-face {
+            font-family: 'Kiona';
+            font-weight: 400;
+            font-display: swap;
+            src: url(${fonts.Kiona})
+          }
+          @font-face {
+            font-family: 'Kiona';
+            font-weight: bold;
+            font-display: swap;
+            src: url(${fonts.KionaBold});
+          }
+          @font-face {
+            font-family: 'Montserrat';
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+            src: url(${fonts.MontserratLight});
+          }
+          @font-face {
+            font-family: 'Montserrat';
+            font-weight: 300;
+            font-style: italic;
+            font-display: swap;
+            src: url(${fonts.MontserratLightItalic});
+          }
+          @font-face {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+            src: url(${fonts.MontserratSemiBold});
+          }
+          @font-face {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-style: italic;
+            font-display: swap;
+            src: url(${fonts.MontserratSemiBoldItalic});
+          }
+          // @font-face {
+          //   font-family: 'Montserrat';
+          //   font-weight: 700;
+          //   font-style: normal;
+          //   font-display: swap;
+          //   src: url(${fonts.MontserratBold});
+          // }
+          // @font-face {
+          //   font-family: 'Montserrat';
+          //   font-weight: 700;
+          //   font-style: italic;
+          //   font-display: swap;
+          //   src: url(${fonts.MontserratBoldItalic});
+          // }      
           h1, h2, h3, h4, h5, h6 {
             margin-bottom: ${rhythm(1 / 4)};
           }
