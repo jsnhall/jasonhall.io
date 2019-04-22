@@ -19,10 +19,10 @@ class Index extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        {/* <SEO
-          title="Web Development Blog"
-          keywords={[`blog`, `jason hall`, `web development blog`, `html blog`, `css blog`, `javascript blog`]}
-        /> */}
+        <SEO
+          title="Front-end Web Developer"
+          // keywords={[`blog`, `jason hall`, `web development blog`, `html blog`, `css blog`, `javascript blog`]}
+        />
         <Masthead />
         <SectionTitle
           level="h2"
