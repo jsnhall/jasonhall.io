@@ -2,7 +2,7 @@ import React from 'react'
 import { Global, css } from '@emotion/core'
 
 import fonts from '../styles/fonts'
-import { transitionTime } from '../styles/theme'
+import { color, transitionTime } from '../styles/theme'
 import { rhythm } from '../utils/typography'
 import Header from './Header'
 import Footer from './Footer'
@@ -71,25 +71,22 @@ export default function Layout({ children }) {
             margin-bottom: ${rhythm(1 / 4)};
           }
           a {
-            color: #1F0593;
+            color: ${color.blue1};
             text-decoration: none;
-            border-bottom: 1px solid #1F0593;
+            border-bottom: 1px solid ${color.blue1};
             vertical-align: top;
             transition: all ${transitionTime.fast};
           }
-          a:visited {
-            color: #283593;
-          }
           a:hover {
-            color: #ff0000;
-            border-color: #ff0000;
+            color: ${color.red};
+            border-color: ${color.red};
             transition: all ${transitionTime.fast};
           }
           a:active {
-            color: #283593;
+            color: ${color.blue2};
           }
           ::selection {
-            background-color: #ff0000;
+            background-color: ${color.red};
             color: #fff;
           }
           img {

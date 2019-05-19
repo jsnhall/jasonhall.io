@@ -26,8 +26,9 @@ export const radius = {
 }
 
 export const color = {
-  blue1: '#1F0593',
-  blue2: '#283593',
-  blue3: '#1F059370',
+  blue1: '#134074',
+  blue2: '#13315C',
+  blue3: '#001242',
+  blue4: '#0B132B',
   red: '#ff0000',
 }
