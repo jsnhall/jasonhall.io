@@ -15,7 +15,7 @@ class Index extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    const posts = data.allFile.nodes
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -42,10 +42,10 @@ class Index extends React.Component {
             }
           `}
         >
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
+          {posts.map(post => {
+            const title = post.childMarkdownRemark.frontmatter.title || post.childMarkdownRemark.fields.slug
             return (
-              <Section key={node.fields.slug}>
+              <Section key={post.childMarkdownRemark.fields.slug}>
                 <div
                   css={css`
                     display: flex;
@@ -68,19 +68,19 @@ class Index extends React.Component {
                           box-shadow: none;
                           border-bottom: none;
                         `}
-                        to={node.fields.slug}>
+                        to={post.childMarkdownRemark.fields.slug}>
                         {title}
                       </Link>
                     </h3>
-                    <small>{node.frontmatter.date}</small>
+                    <small>{post.childMarkdownRemark.frontmatter.date}</small>
                     <p
                       css={css`
                         margin: 1em 0 2em 0;
                       `}
-                      dangerouslySetInnerHTML={{ __html: node.excerpt }}
+                      dangerouslySetInnerHTML={{ __html: post.childMarkdownRemark.excerpt }}
                     />
                   </div>
-                  <Button link={node.fields.slug}>Read More</Button>
+                  <Button link={post.childMarkdownRemark.fields.slug}>Read More</Button>
                 </div>
               </Section>
             )
@@ -100,9 +100,13 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 3) {
-      edges {
-        node {
+    allFile(
+      filter: {sourceInstanceName: {eq: "blog"}}
+      sort: {fields: [childMarkdownRemark___frontmatter___date], order:DESC}
+      limit: 3
+    ) {
+      nodes {
+        childMarkdownRemark {
           excerpt
           fields {
             slug

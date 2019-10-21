@@ -7,7 +7,7 @@ import SectionTitle from '../components/SectionTitle'
 import { rhythm } from '../utils/typography'
 
 export default function Blog({ data }) {
-  let posts = data.allMarkdownRemark.edges
+  let posts = data.allFile.nodes
   
   return (
     <Layout>
@@ -18,11 +18,11 @@ export default function Blog({ data }) {
         `}
       >
         <SectionTitle>All Posts</SectionTitle>
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
+        {posts.map(post => {
+          const title = post.childMarkdownRemark.frontmatter.title || post.childMarkdownRemark.fields.slug
           return (
             <div
-              key={node.fields.slug}
+              key={post.childMarkdownRemark.fields.slug}
             >
               <div>
                 <h2
@@ -36,17 +36,17 @@ export default function Blog({ data }) {
                       box-shadow: none;
                       border-bottom: none;
                     `}
-                    to={node.fields.slug}>
+                    to={post.childMarkdownRemark.fields.slug}>
                     {title}
                   </Link>
                 </h2>
-                <small>{node.frontmatter.date}</small>
+                <small>{post.childMarkdownRemark.frontmatter.date}</small>
               </div>
               <p
                 css={css`
                   margin: 1em 0 0 0;
                 `}
-                dangerouslySetInnerHTML={{ __html: node.excerpt }}
+                dangerouslySetInnerHTML={{ __html: post.childMarkdownRemark.excerpt }}
               />
               <hr
                 css={css`
@@ -63,9 +63,12 @@ export default function Blog({ data }) {
 
 export const postQuery = graphql`
   query postQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
+    allFile(
+      filter: {sourceInstanceName: {eq: "blog"}}
+      sort: {fields: [childMarkdownRemark___frontmatter___date], order:DESC}
+    ) {
+      nodes {
+        childMarkdownRemark {
           excerpt
           fields {
             slug

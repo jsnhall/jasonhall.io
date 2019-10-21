@@ -2,7 +2,7 @@ import React from 'react'
 import { Global, css } from '@emotion/core'
 
 import fonts from '../styles/fonts'
-import { color, transitionTime } from '../styles/theme'
+import { color, radius, shadow, transitionTime } from '../styles/theme'
 import { rhythm } from '../utils/typography'
 import Header from './Header'
 import Footer from './Footer'
@@ -95,6 +95,25 @@ export default function Layout({ children }) {
           }
           .gatsby-highlight {
             margin-bottom: 1.666rem;
+          }
+          .button {
+            background: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            padding: 1.2em 2.5em !important;
+            color: ${color.red};
+            border-radius: ${radius.lg};
+            box-shadow: ${shadow.md};
+            display: inline-block;
+            &:visited {
+              color: ${color.red};
+            }
+            &:hover {
+              background: ${color.red};
+              color: #fff !important;
+            }
           }
         `}
       />

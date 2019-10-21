@@ -8,12 +8,13 @@ exports.createPages = ({ graphql, actions }) => {
   return graphql(
     `
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
+        allFile(
+          filter: {sourceInstanceName: {eq: "blog"}}
+          sort: {fields: [childMarkdownRemark___frontmatter___date], order:DESC}
           limit: 1000
         ) {
-          edges {
-            node {
+          nodes {
+            childMarkdownRemark {
               fields {
                 slug
               }
@@ -31,17 +32,18 @@ exports.createPages = ({ graphql, actions }) => {
     }
 
     // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allFile.nodes
 
     posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node
+      console.log(posts.childMarkdownRemark)
+      const previous = index === posts.length - 1 ? null : posts[index + 1].childMarkdownRemark
+      const next = index === 0 ? null : posts[index - 1].childMarkdownRemark
 
       createPage({
-        path: post.node.fields.slug,
+        path: post.childMarkdownRemark.fields.slug,
         component: blogPost,
         context: {
-          slug: post.node.fields.slug,
+          slug: post.childMarkdownRemark.fields.slug,
           previous,
           next,
         },

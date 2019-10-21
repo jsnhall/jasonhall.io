@@ -1,11 +1,12 @@
 import React from 'react'
 import { css } from '@emotion/core'
+import Image from 'gatsby-image'
 
 import Button from '../components/Button'
 import { rhythm } from '../utils/typography'
 import { shadow, radius } from '../styles/theme'
 
-export default function Cards({ children }) {
+export default function Cards(props) {
   return (
     <div
       css={css`
@@ -14,12 +15,12 @@ export default function Cards({ children }) {
         background: #fff;
       `}
     >
-      <img
+      <Image
         css={css`
           border-radius: ${radius.md} ${radius.md} 0 0;
           width: 100%;
         `}
-        src="https://via.placeholder.com/360x203" 
+        fluid={props.thumbnail} 
         alt=""
       />
       <div
@@ -45,17 +46,17 @@ export default function Cards({ children }) {
                 line-height: ${rhythm(1)};
               `}
             >
-              Test
+              {props.title}
             </h3>
             <p
               css={css`
                 margin: 1em 0 2em 0;
               `}
             >
-              Lorem ipsum 
+              {props.description}
             </p>
           </div>
-          <Button>Read More</Button>
+          <Button link={props.link}>View Project</Button>
         </div>
       </div>
     </div>
